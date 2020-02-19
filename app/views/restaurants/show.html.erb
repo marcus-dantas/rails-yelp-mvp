@@ -1,0 +1,7 @@
+<h3 class="display-3"><%= @restaurant.name%></h3>
+<p class="lead"><%= @restaurant.address %></p>
+<p class="lead"><%= @restaurant.phone_number %></p>
+<p class="lead"><%= @restaurant.category %></p>
+<p class="lead"><%= @restaurant.reviews %></p>
+<%= link_to "home", restaurants_path %>
+<%= link_to "new review", new_restaurant_review_path(@restaurant) %>

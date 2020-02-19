@@ -1,0 +1,9 @@
+<div class="container">
+<h1 class="display-1 title">Yelper</h1>
+<i class="fas fa-cloud-meatball"></i>
+</div>
+<% @restaurants.each do |restaurant| %>
+  <p><%= link_to restaurant.name, restaurant_path(restaurant) %></p>
+  <br>
+  <hr>
+<% end %>
